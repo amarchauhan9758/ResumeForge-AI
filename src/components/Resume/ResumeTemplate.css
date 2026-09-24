@@ -1,11 +1,3 @@
-@import "tailwindcss";
-
-
-
-/* =====================================================
-   RESUME PAGE
-===================================================== */
-
 .resume-page {
   width: 8.5in;
   min-height: 11in;
@@ -13,19 +5,10 @@
   margin: 0 auto;
   padding: 0.55in 0.65in;
 
-  background: #ffffff;
-
-  /*
-    Times New Roman gives a very close browser
-    equivalent to the classic LaTeX serif appearance.
-  */
-  font-family:
-    "Times New Roman",
-    Times,
-    serif;
-
+  background: #fff;
   color: #111;
 
+  font-family: "Times New Roman", Times, serif;
   font-size: 10.5pt;
   line-height: 1.18;
 
@@ -33,9 +16,7 @@
 }
 
 
-/* =====================================================
-   HEADER
-===================================================== */
+/* ================= HEADER ================= */
 
 .resume-header {
   text-align: center;
@@ -49,7 +30,6 @@
   line-height: 1.05;
 
   font-weight: 600;
-  letter-spacing: 0.2px;
 }
 
 .resume-title {
@@ -84,14 +64,12 @@
 }
 
 .resume-links a {
-  color: inherit;
+  color: #111;
   text-decoration: none;
 }
 
 
-/* =====================================================
-   SECTION
-===================================================== */
+/* ================= SECTION ================= */
 
 .resume-section {
   margin-top: 11px;
@@ -108,33 +86,20 @@
   line-height: 1.1;
 
   font-weight: 700;
-
-  letter-spacing: 0;
 }
 
 
-/* =====================================================
-   SUMMARY
-===================================================== */
+/* ================= SUMMARY ================= */
 
 .resume-paragraph {
   margin: 0;
 
-  text-align: left;
-
   font-size: 10.3pt;
-
   line-height: 1.2;
 }
 
 
-/* =====================================================
-   TECHNICAL SKILLS
-===================================================== */
-
-.skills {
-  margin-top: 1px;
-}
+/* ================= SKILLS ================= */
 
 .skill-row {
   margin: 1px 0;
@@ -148,9 +113,7 @@
 }
 
 
-/* =====================================================
-   EXPERIENCE
-===================================================== */
+/* ================= EXPERIENCE ================= */
 
 .experience-item {
   margin-top: 8px;
@@ -181,7 +144,6 @@
 
 .experience-right {
   flex-shrink: 0;
-
   text-align: right;
 }
 
@@ -216,14 +178,10 @@
 
   font-size: 10pt;
   line-height: 1.16;
-
-  text-align: left;
 }
 
 
-/* =====================================================
-   PROJECTS
-===================================================== */
+/* ================= PROJECTS ================= */
 
 .project-item {
   margin-top: 7px;
@@ -255,9 +213,7 @@
 }
 
 
-/* =====================================================
-   EDUCATION
-===================================================== */
+/* ================= EDUCATION ================= */
 
 .education-item {
   display: flex;
@@ -283,9 +239,7 @@
 }
 
 
-/* =====================================================
-   CERTIFICATIONS
-===================================================== */
+/* ================= CERTIFICATIONS ================= */
 
 .simple-bullets {
   margin: 3px 0 0;
@@ -294,14 +248,11 @@
 
 .simple-bullets li {
   margin: 2px 0;
-
   font-size: 10pt;
 }
 
 
-/* =====================================================
-   PRINT
-===================================================== */
+/* ================= PRINT ================= */
 
 @media print {
   @page {
@@ -327,13 +278,10 @@
 }
 
 
-/* =====================================================
-   SCREEN PREVIEW
-===================================================== */
+/* ================= SCREEN ================= */
 
 @media screen {
   .resume-page {
-    box-shadow:
-      0 2px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   }
 }

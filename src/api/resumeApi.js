@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/resume";
+const BASE_URL = "http://localhost:9000/api/resume";
 
 export async function analyzeResumeApi(payload) {
   const response = await axios.post(`${BASE_URL}/analyze-resume`, payload);
@@ -17,5 +17,13 @@ export async function uploadResumeApi(file) {
     },
   });
 
+  return response.data;
+}
+
+export async function updateResumeApi(payload) {
+  const response = await axios.post(
+    `${BASE_URL}/rewrite-resume`,
+    payload,
+  );
   return response.data;
 }
