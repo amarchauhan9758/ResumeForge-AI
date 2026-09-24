@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:9000/api/resume";
+// const BASE_URL = "http://localhost:9000/api/resume";
+const BASE_URL = "https://resumeforge-backend-irkr.onrender.com";
 
 export async function analyzeResumeApi(payload) {
   const response = await axios.post(`${BASE_URL}/analyze-resume`, payload);
@@ -21,9 +22,6 @@ export async function uploadResumeApi(file) {
 }
 
 export async function updateResumeApi(payload) {
-  const response = await axios.post(
-    `${BASE_URL}/rewrite-resume`,
-    payload,
-  );
+  const response = await axios.post(`${BASE_URL}/rewrite-resume`, payload);
   return response.data;
 }
